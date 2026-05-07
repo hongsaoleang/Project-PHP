@@ -168,6 +168,9 @@
                     <p class="mt-2">&#11088;&#11088;&#11088;&#11088;&#11088;</p>
                     <h5><?php echo $row['product_name']; ?></h5>
                     <h6><?php echo $row['product_price']; ?></h6>
+                    <a href="<?php echo "SingleProduct.php?product_id=". $row['product_id'] ?>">
+                        <button class="buy-btn">But Now</button>
+                    </a>
                 </div>
             </div>
         <?php } ?>
