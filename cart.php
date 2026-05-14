@@ -77,7 +77,7 @@ function calculateTotal()
         </ul>
         <ul class="d-flex list-unstyled me-5 gap-5 align-items-center">
             <li><a href="index.php" class="text-decoration-none text-black">Home</a></li>
-            <li><a href="shop.php" class="text-decoration-none text-black">Shop</a></li>
+            <li><a href="Shop.html" class="text-decoration-none text-black">Shop</a></li>
         </ul>
     </nav>
 

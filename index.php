@@ -18,14 +18,14 @@
             <img class="rounded-circle" style="width: 50px; height: 50px    ;" src="./assests/img/AUB.png" alt="">
             <li class="fw-bold">Aub Shop</li>
         </ul>
-        <ul class="d-flex list-unstyled me-5 gap-5 link text-decoration-none">
-            <li><a href="./index.php" class="text-decoration-none text-black ">Home</a></li>
-            <li><a href="./Shop.html" class="text-decoration-none text-black ">Shop</a></li>
+        <ul class="d-flex list-unstyled me-5 gap-5 text-decoration-none">
+            <li><a href="index.php" class="text-decoration-none text-black ">Home</a></li>
+            <li><a href="Shop.html" class="text-decoration-none text-black ">Shop</a></li>
             <li><a href="" class="text-decoration-none text-black ">Blog</a></li>
-            <li><a href="./contact.html" class="text-decoration-none text-black ">Contact Us</a></li>
+            <li><a href="contact.html" class="text-decoration-none text-black ">Contact Us</a></li>
             <li>
-                <a href="./cart.html"><i class="fas fa-shopping-bag">Cart</i></a>
-                <a href="./account.html" class=""><i class="fas fa-user">Account</i></a>
+                <a href="cart.php"><i class="fas fa-shopping-bag">Cart</i></a>
+                <a href="account.html" class=""><i class="fas fa-user">Account</i></a>
             </li>
             <li class="">
                 <ul class="list-unstyled fw-bold">
@@ -95,7 +95,7 @@
         <?php include('./server/get_coat.php') ?>
 
         <?php while ($row = $coats_products->fetch_assoc()) { ?>
-            <div class="hking text-center" onclick="window.location.href='SingleProduct.html';">
+            <div class="hking text-center" onclick="window.location.href='SingleProduct.php';">
                 <img class="rounded-2 shadow" style="width: 300px; height: 300px;" src="./assests/img/<?php echo $row['product_image']; ?>" alt="">
                 <div>
                     <p class="mt-2">&#11088;&#11088;&#11088;&#11088;&#11088;</p>
@@ -169,7 +169,7 @@
                     <h5><?php echo $row['product_name']; ?></h5>
                     <h6><?php echo $row['product_price']; ?></h6>
                     <a href="<?php echo "SingleProduct.php?product_id=". $row['product_id'] ?>">
-                        <button class="buy-btn">But Now</button>
+                        <button class="buy-btn">Buy Now</button>
                     </a>
                 </div>
             </div>
